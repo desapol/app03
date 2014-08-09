@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+{% endblock %}
+
+{% block content %}
+<h2>Bienvenido {{user}}</h2>
+<a href="/log-out"><button> Log Out </button></a>
+
+	<form method="POST" action="/crear-anexo">
+			Anexo: 		<input name="anexo" type="text"> <br/>
+			Nombre: 	<input name="name" type="text"> <br/>
+			Apellido: 	<input name="apepat" type="text"> <br/>
+			Cod.Inst:	<input name="cod" type="text"> <br/>
+			Sede: 		<input name="sede" type="text"> <br/>
+			Area: 		<input name="area" type="text"> <br/>
+			<button> Crear </button>
+	</form>
+
+{% endblock %}

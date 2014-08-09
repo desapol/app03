@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+{% endblock %}
+
+{% block content %}
+<h2>Se ha creado el anexo {{axo}} asignado a:</h2></br>
+<li>Nombre: {{nombre}} {{apepat}}</li></br>
+<li>Cod.Inst.: {{codigo}}</li></br>
+<li>Sede: {{sede}}</li></br>
+
+<a href="/app"><button> Crear otro anexo </button></a>
+<a href="/log-out"><button> Log Out </button></a>
+{% endblock %}
